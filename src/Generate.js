@@ -26,7 +26,7 @@ const Generate = ({ text, setText, startDestination, endDestination, startDate, 
                     end_date: formatDate(endDate)
                 };
 
-                const response = await axios.post("http://127.0.0.1:5000/chat", details, {
+                const response = await axios.post("https://trip-ai-5o29o.ondigitalocean.app//chat", details, {
                     headers: {
                         "Content-Type": "application/json",
                         Accept: "/",
@@ -52,7 +52,7 @@ const Generate = ({ text, setText, startDestination, endDestination, startDate, 
                   location : location
                 };
 
-                const response = await axios.post("http://127.0.0.1:5000/getimg", params, {
+                const response = await axios.post("https://trip-ai-5o29o.ondigitalocean.app//getimg", params, {
                     headers: {
                         "Content-Type": "application/json",
                         Accept: "/",
