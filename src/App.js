@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Generate from "./Generate";
+import Home from "./Home";
 
 function App() {
+  const [text, setText] = useState([]);
+  const [startDestination, setStartDestination] = useState("");
+  const [endDestination, setEndDestination] = useState("");
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Routes>
+          <Route path="/generate" element={<Generate text={text} setText={setText} />}/>
+          <Route path="/" element={<Home text={text} setText={setText} startDestination={startDestination} setStartDestination={setStartDestination} endDestination={endDestination} setEndDestination ={setEndDestination} startDate = {startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>}/>
+        </Routes>
+    </Router>
   );
 }
 
