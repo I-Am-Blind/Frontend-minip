@@ -36,7 +36,7 @@ const Home = ({
                     placeholder="Start Destination"
                     value={startDestination}
                     onChange={(event) => setStartDestination(event.target.value)}
-                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[30rem] sm:h-[6rem] sm:text-2xl"
+                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[20rem] sm:h-[4rem] sm:text-xl"
                 />
                 <input
                     type="text"
@@ -44,7 +44,7 @@ const Home = ({
                     placeholder="End Destination"
                     value={endDestination}
                     onChange={(event) => setEndDestination(event.target.value)}
-                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[30rem] sm:h-[6rem] sm:text-2xl"
+                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[20rem] sm:h-[4rem] sm:text-xl"
                 />
                 <input
                     type="date"
@@ -52,7 +52,7 @@ const Home = ({
                     placeholder="Start Date"
                     value={startDate}
                     onChange={(event) => setStartDate(event.target.value)}
-                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[30rem] sm:h-[6rem] sm:text-2xl"
+                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[20rem] sm:h-[4rem] sm:text-xl"
                 />
                 <input
                     type="date"
@@ -60,7 +60,7 @@ const Home = ({
                     placeholder="End Date"
                     value={endDate}
                     onChange={(event) => setEndDate(event.target.value)}
-                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[30rem] sm:h-[6rem] sm:text-2xl"
+                    className="px-4 py-2  rounded-2xl sm:rounded-[2rem] focus:outline-none inputs sm:w-[20rem] sm:h-[4rem] sm:text-xl"
                 />               
                     <Link to='/generate'>
                     <button
