@@ -4,18 +4,48 @@ import Generate from "./Generate";
 import Home from "./Home";
 
 function App() {
+
   const [text, setText] = useState([]);
   const [startDestination, setStartDestination] = useState("");
   const [endDestination, setEndDestination] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+
   return (
-    <Router>
+      <Router>
         <Routes>
-          <Route path="/generate" element={<Generate text={text} setText={setText} />}/>
-          <Route path="/" element={<Home text={text} setText={setText} startDestination={startDestination} setStartDestination={setStartDestination} endDestination={endDestination} setEndDestination ={setEndDestination} startDate = {startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>}/>
+          <Route
+            path="/generate"
+            element={
+              <Generate
+                text={text}
+                setText={setText}
+                startDestination={startDestination}
+                endDestination={endDestination}
+                startDate={startDate}
+                endDate={endDate}
+              />
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <Home
+                text={text}
+                setText={setText}
+                startDestination={startDestination}
+                setStartDestination={setStartDestination}
+                endDestination={endDestination}
+                setEndDestination={setEndDestination}
+                startDate={startDate}
+                setStartDate={setStartDate}
+                endDate={endDate}
+                setEndDate={setEndDate}
+              />
+            }
+          />
         </Routes>
-    </Router>
+      </Router>
   );
 }
 

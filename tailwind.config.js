@@ -7,7 +7,7 @@ module.exports = {
         'mountain': "url('app_bg.jpg')"
       },
       colors :{
-        'black' : '#1C1C1C',
+        'black' : '#3A3A3A',
        },
       fontFamily : {
         'main' : ['Urbanist' , 'sans-serif'],
