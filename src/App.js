@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Generate from "./Generate";
 import Home from "./Home";
+import Loader from "./Loader";
 
 function App() {
 
